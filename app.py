@@ -36,7 +36,7 @@ if uploaded_file:
     st.sidebar.header("⚙️ Parameter Simulasi")
     bobot_kinerja = st.sidebar.slider("Bobot KPI (%)", 50, 100, 80)
     bobot_perilaku = 100 - bobot_kinerja
-    nilai_akhlak = st.sidebar.slider("Nilai AKHLAK (%)", 50, 120, 100)
+    nilai_akhlak = st.sidebar.slider("Nilai AKHLAK (%)", 50, 100, 100)
 
     # Hitung skor akhir
     total_bobot = df_nipp["BOBOT (%)"].sum()
